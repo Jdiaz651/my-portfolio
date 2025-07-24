@@ -5,46 +5,92 @@ import { Download, Mail, Phone, MapPin, Calendar } from "lucide-react";
 
 const Resume = () => {
   const skills = {
-    "Programming Languages": ["JavaScript", "TypeScript", "Python", "Java", "C++"],
-    "Frontend": ["React", "Vue.js", "HTML5", "CSS3", "Tailwind CSS", "Sass"],
-    "Backend": ["Node.js", "Express", "Django", "Spring Boot", "RESTful APIs"],
-    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "Redis"],
-    "Tools & Technologies": ["Git", "Docker", "AWS", "Firebase", "Jest", "Webpack"]
+    "Programming Languages": [
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "C#",
+      "HTML",
+      "CSS",
+    ],
+    Frontend: ["React", "React Native", "Tailwind CSS"],
+    Backend: ["Node.js", "RESTful APIs", "Firebase", "Web Scraping"],
+    "XR / Game Development": [
+      "Unity",
+      "Meta XR SDK",
+      "MRUK",
+      "Photosphere Rendering",
+      "VR Interaction",
+    ],
+    "Tools & Technologies": ["Git", "Lucide Icons"],
   };
 
   const experience = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Company Inc.",
-      location: "San Francisco, CA",
-      duration: "Jan 2022 - Present",
+      title: "Software Engineer Intern",
+      company: "Breakthrough Tech Miami",
+      location: "Miami, FL",
+      duration: "Aug 2024 – Dec 2024",
       description: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Mentored junior developers and conducted technical interviews"
-      ]
+        "Built a full-stack civic tech web app to display local government agendas using Python and React",
+        "Automated data scraping pipelines and integrated RESTful APIs to fetch and display structured data",
+        "Used AI models to convert legal documents into plain language for public accessibility",
+      ],
     },
     {
-      title: "Software Engineer",
-      company: "Startup XYZ",
-      location: "Remote",
-      duration: "Jun 2020 - Dec 2021",
+      title: "Cybersecurity Analyst Intern",
+      company: "United Data Technologies",
+      location: "Miami, FL",
+      duration: "Jun 2023 – Aug 2023",
       description: [
-        "Built responsive web applications using React and TypeScript",
-        "Developed RESTful APIs with Node.js and Express",
-        "Collaborated with cross-functional teams in Agile environment"
-      ]
-    }
+        "Identified and remediated critical system vulnerabilities across enterprise IT infrastructure",
+        "Triaged cybersecurity incidents, executing rapid risk mitigation protocols",
+        "Provided cybersecurity training to non-technical teams, fostering a security-first culture",
+      ],
+    },
+    {
+      title: "Operations & Infrastructure Lead",
+      company: "Women in Computer Science (FIU Student Tech Org)",
+      location: "Miami, FL",
+      duration: "Aug 2022 – Mar 2025",
+      description: [
+        "Led A/V setup and logistics for WiTCON, Florida's largest student-run Women in Tech conference",
+        "Managed live technical operations, contingency planning, and multi-room support for 3 annual events",
+        "Organized workshops and helped increase inclusivity in tech outreach and education",
+      ],
+    },
+    {
+      title: "Software Engineer, Project Contributor",
+      company: "INIT (FIU Student Tech Org)",
+      location: "Miami, FL",
+      duration: "Aug 2022 – Present",
+      description: [
+        "Collaborated on student-led teams to build production-ready mobile and VR projects using React Native and Unity",
+        "Contributed to PriceHub, PawsUp VR Tour, and OPERATION: SKYREACH! platformer game",
+        "Participated in agile team sprints, code reviews, and public demo showcases",
+      ],
+    },
+    {
+      title: "XR Developer",
+      company: "XRBootcamp",
+      location: "Remote",
+      duration: "Feb 2025 – Jul 2025",
+      description: [
+        "Developed immersive Mixed Reality apps using Unity, MRUK, and Meta XR SDKs for the Quest 3",
+        "Built and demoed capstone projects: Build-A-Way XR and Plant-Safe XR with hand tracking and AI",
+        "Focused on 3D physics systems, gesture controls, and natural world anchoring for real-world interactions",
+      ],
+    },
   ];
 
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      school: "University of Technology",
-      location: "Boston, MA",
-      duration: "2016 - 2020",
-      gpa: "3.8/4.0"
-    }
+      school: "Florida International University",
+      location: "Miami, FL",
+      duration: "Aug 2021 – Dec 2025",
+      gpa: "3.5",
+    },
   ];
 
   return (
@@ -57,15 +103,15 @@ const Resume = () => {
             <div className="flex justify-center gap-4 text-muted-foreground mb-6">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>your.email@example.com</span>
+                <span>jdiaz651@outlook.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
-                <span>(555) 123-4567</span>
+                <span>+1 (786) 602-3052</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>Miami, FL</span>
               </div>
             </div>
             <Button>
@@ -86,7 +132,9 @@ const Resume = () => {
                     <h4 className="font-semibold mb-2">{category}</h4>
                     <div className="flex flex-wrap gap-2">
                       {skillList.map((skill, index) => (
-                        <Badge key={index} variant="secondary">{skill}</Badge>
+                        <Badge key={index} variant="secondary">
+                          {skill}
+                        </Badge>
                       ))}
                     </div>
                   </div>
@@ -111,10 +159,14 @@ const Resume = () => {
                         <span>{job.duration}</span>
                       </div>
                     </div>
-                    <p className="text-muted-foreground mb-2">{job.company} • {job.location}</p>
+                    <p className="text-muted-foreground mb-2">
+                      {job.company} • {job.location}
+                    </p>
                     <ul className="list-disc list-inside space-y-1">
                       {job.description.map((item, itemIndex) => (
-                        <li key={itemIndex} className="text-sm">{item}</li>
+                        <li key={itemIndex} className="text-sm">
+                          {item}
+                        </li>
                       ))}
                     </ul>
                   </div>
@@ -139,7 +191,9 @@ const Resume = () => {
                         <span>{edu.duration}</span>
                       </div>
                     </div>
-                    <p className="text-muted-foreground">{edu.school} • {edu.location}</p>
+                    <p className="text-muted-foreground">
+                      {edu.school} • {edu.location}
+                    </p>
                     <p className="text-sm">GPA: {edu.gpa}</p>
                   </div>
                 ))}

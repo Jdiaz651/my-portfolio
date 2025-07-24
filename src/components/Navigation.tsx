@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navigation = () => {
     { href: "/", label: "Home" },
     { href: "/projects", label: "Projects" },
     { href: "/resume", label: "Resume" },
-    { href: "/contact", label: "Contact" }
+    { href: "/contact", label: "Contact" },
   ];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -23,7 +24,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="font-bold text-xl">
-            Your Name
+            Jaime Diaz
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,23 +37,26 @@ const Navigation = () => {
                   "text-sm font-medium transition-colors hover:text-primary",
                   location.pathname === item.href
                     ? "text-primary"
-                    : "text-muted-foreground"
+                    : "text-muted-foreground",
                 )}
               >
                 {item.label}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="sm"
-            className="md:hidden"
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-          </Button>
+          {/* Mobile Menu Button and Theme Toggle */}
+          <div className="md:hidden flex items-center space-x-2">
+            <ThemeToggle />
+            <Button variant="ghost" size="sm" onClick={toggleMenu}>
+              {isMenuOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -67,7 +71,7 @@ const Navigation = () => {
                     "block px-3 py-2 text-base font-medium transition-colors hover:text-primary",
                     location.pathname === item.href
                       ? "text-primary"
-                      : "text-muted-foreground"
+                      : "text-muted-foreground",
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
