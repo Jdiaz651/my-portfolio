@@ -8,8 +8,8 @@ import {
   Mail,
   Download,
   Code,
-  Briefcase,
-  User,
+  Rocket,
+  Users,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -17,30 +17,35 @@ const Index = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Full-Stack Developer",
-      description: "Experienced in React, Node.js, and modern web technologies",
+      title: "XR & Full-Stack Developer",
+      description:
+        "Building mixed reality and full-stack web apps using Unity, React, Firebase, and more.",
     },
     {
-      icon: Briefcase,
-      title: "3+ Years Experience",
+      icon: Rocket,
+      title: "Demo-Ready Projects",
       description:
-        "Building scalable applications and leading development teams",
+        "Contributed to civic tech apps, VR tours, and mobile price tools demoed across FIU and beyond.",
     },
     {
-      icon: User,
-      title: "Problem Solver",
+      icon: Users,
+      title: "Team & Community Builder",
       description:
-        "Passionate about creating elegant solutions to complex challenges",
+        "Led ops for WiTCON and contributed to INIT, helping bring student tech projects to life.",
     },
   ];
 
   const featuredSkills = [
     "React",
+    "React Native",
+    "Unity",
     "TypeScript",
-    "Node.js",
+    "Firebase",
+    "Tailwind CSS",
     "Python",
-    "AWS",
-    "PostgreSQL",
+    "C#",
+    "Node.js",
+    "Meta XR SDK",
   ];
 
   return (
@@ -50,12 +55,13 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Software Engineer
+              XR & Full-Stack Developer
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Hi, I'm{" "}
-              <span className="font-semibold text-foreground">Jaime Diaz</span>.
-              I build exceptional digital experiences that make a difference.
+              Hey, I'm{" "}
+              <span className="font-semibold text-foreground">Jaime Diaz</span>{" "}
+              — I craft immersive XR experiences and scalable web solutions with
+              a focus on accessibility, creativity, and real-world impact.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -76,7 +82,7 @@ const Index = () => {
             <div className="flex justify-center gap-6 mb-16">
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/jaimehamdiaz"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -86,7 +92,7 @@ const Index = () => {
               </Button>
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/jaimehamdiaz/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -113,8 +119,8 @@ const Index = () => {
               Technologies I Work With
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              I love working with modern technologies to build scalable and
-              efficient solutions.
+              I enjoy blending creativity and engineering to build meaningful,
+              responsive, and immersive products.
             </p>
           </div>
 
@@ -138,8 +144,8 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">What I Bring</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              A combination of technical expertise, creative problem-solving,
-              and collaborative spirit.
+              From interactive apps to infrastructure at scale, I bring a mix of
+              technical depth, team collaboration, and community involvement.
             </p>
           </div>
 
@@ -171,12 +177,12 @@ const Index = () => {
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto text-center">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-3xl font-bold mb-4">
-              Let's Build Something Amazing
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Let's Connect</h2>
             <p className="text-muted-foreground mb-8">
-              I'm always interested in new opportunities and challenging
-              projects. Let's discuss how we can work together.
+              I’m actively seeking software engineering or XR development
+              internships and new-grad roles. If you're looking for someone who
+              blends technical versatility with creative problem-solving, I’d
+              love to hear from you
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>
