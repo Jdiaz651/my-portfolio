@@ -116,7 +116,9 @@ const Resume = () => {
             </div>
             <Button>
               <Download className="w-4 h-4 mr-2" />
-              Download PDF
+              <a href="/Jaime_Diaz_Resume.pdf" download target="_blank">
+                Download PDF
+              </a>
             </Button>
           </div>
 

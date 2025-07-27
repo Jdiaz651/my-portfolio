@@ -17,7 +17,7 @@ const Index = () => {
   const highlights = [
     {
       icon: Code,
-      title: "XR & Full-Stack Developer",
+      title: "Multidisciplinary Software Developer",
       description:
         "Building mixed reality and full-stack web apps using Unity, React, Firebase, and more.",
     },
@@ -55,13 +55,13 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              XR & Full-Stack Developer
+              Multidisciplinary Software Developer
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Hey, I'm{" "}
               <span className="font-semibold text-foreground">Jaime Diaz</span>{" "}
-              — I craft immersive XR experiences and scalable web solutions with
-              a focus on accessibility, creativity, and real-world impact.
+              — I’m a developer focused on building creative, accessible, and
+              impactful applications — across web, games, and emerging tech.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
