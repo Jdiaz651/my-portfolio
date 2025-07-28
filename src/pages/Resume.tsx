@@ -114,9 +114,13 @@ const Resume = () => {
                 <span>Miami, FL</span>
               </div>
             </div>
-            <Button>
-              <Download className="w-4 h-4 mr-2" />
-              <a href="/Jaime_Diaz_Resume.pdf" download target="_blank">
+            <Button asChild>
+              <a
+                href={`${import.meta.env.BASE_URL}Jaime_Diaz_Resume.pdf`}
+                download
+                target="_blank"
+              >
+                <Download className="w-4 h-4 mr-2" />
                 Download PDF
               </a>
             </Button>

@@ -82,7 +82,7 @@ const Index = () => {
             <div className="flex justify-center gap-6 mb-16">
               <Button variant="ghost" size="sm" asChild>
                 <a
-                  href="https://github.com/jaimehamdiaz"
+                  href="https://github.com/jdiaz651"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
