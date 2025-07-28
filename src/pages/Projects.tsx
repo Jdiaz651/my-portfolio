@@ -16,7 +16,7 @@ const Projects = () => {
         "Custom Movement",
         "Level Design",
       ],
-      githubUrl: "https://github.com/jaimehamdiaz/project-skyreach",
+      githubUrl: "https://github.com/pistolPeterson/Project-SkyReach",
       image: "/gifs/skyreach.gif",
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       description:
         "A mobile-friendly tool for finding the lowest prices on products across retailers. Built with a React Native frontend and Firebase backend, optimized for quick product scanning and result comparison.",
       technologies: ["React Native", "Firebase", "Tailwind CSS", "Expo"],
-      githubUrl: "https://github.com/jaimehamdiaz/pricehub",
+      githubUrl: "https://github.com/luis-c465/price-checker",
       image: "/gifs/pricehub.gif",
     },
     {
@@ -32,7 +32,7 @@ const Projects = () => {
       description:
         "A gamified Mixed Reality app that uses AI to scan houseplants, track their health, and generate a care routine. Developed for XRBootcamp’s showcase project.",
       technologies: ["Unity", "Meta XR SDK", "C#", "AI APIs"],
-      githubUrl: "https://github.com/jaimehamdiaz/plantsafe-xr",
+      githubUrl: "https://github.com/Jaedon-L/PlantIdentifierMR",
       image: "/gifs/plantsafe.gif",
     },
   ];
